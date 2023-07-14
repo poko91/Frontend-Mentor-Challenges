@@ -60,6 +60,7 @@ h6 {
   --light-gray: hsl(212, 45%, 89%);
   --grayish-blue: hsl(220, 15%, 55%);
   --dark-blue: hsl(218, 44%, 22%);
+  --dark-blue-shadow: hsla(218, 44%, 22%, 0.2);
 
   /* font weights */
   --fw-regular: 400;
@@ -80,6 +81,7 @@ body {
   background-color: var(--white);
   display: grid;
   border-radius: 1.25rem;
+  box-shadow: 0.5rem 0.5rem 2rem var(--dark-blue-shadow);
 }
 
 .qr-card__image-container {
