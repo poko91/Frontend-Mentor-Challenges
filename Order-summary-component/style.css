@@ -1,0 +1,194 @@
+/*
+  Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  Add accessible line-height
+  Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+:root {
+  /* Colors */
+
+  /* Primary */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --bright-blue-shadow: hsla(245, 75%, 52%, 0.25);
+  --light-slate-blue-background: hsl(252, 91%, 58%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+/* general styling */
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+  font-size: 0.95rem;
+  color: var(--desaturated-blue);
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  margin: 1rem;
+}
+
+.order {
+  background-color: var(--white);
+  max-width: 28rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 2rem 2rem -1.5rem var(--bright-blue-shadow);
+}
+
+img {
+  border-radius: 1.25rem 1.25rem 0 0;
+  max-width: 100%;
+}
+
+.order__text-container {
+  margin: 2rem;
+  display: grid;
+  gap: 1.15rem;
+  text-align: center;
+}
+
+.order__title {
+  color: var(--dark-blue);
+  font-size: 1.3rem;
+  font-weight: var(--fw-black);
+}
+
+.order__subTitle {
+  font-weight: var(--fw-medium);
+}
+
+.order__plan-container {
+  padding: 0.85rem;
+  background-color: var(--very-pale-blue);
+  border-radius: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.plan__type {
+  font-size: 0.9rem;
+  font-weight: var(--fw-black);
+  color: var(--dark-blue);
+  padding-right: 1rem;
+  text-align: start;
+  white-space: nowrap;
+}
+
+.plan__price {
+  font-size: 0.85rem;
+  padding-right: 2rem;
+  font-weight: var(--fw-medium);
+}
+
+.plan__change {
+  font-size: 0.75rem;
+  color: var(--bright-blue);
+  font-weight: var(--fw-bold);
+  text-decoration: underline;
+}
+
+.plan__change:hover,
+.plan__change:focus-visible {
+  color: var(--light-slate-blue-background);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button {
+  color: var(--white);
+  background-color: var(--bright-blue);
+  padding: 0.65rem 1rem;
+  border: 0;
+  border-radius: 0.6rem;
+  font-weight: var(--fw-bold);
+  box-shadow: 0 0.8rem 1rem var(--bright-blue-shadow);
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: var(--light-slate-blue-background);
+  cursor: pointer;
+}
+
+.button_cancel_order {
+  font-size: 0.9rem;
+  font-weight: var(--fw-black);
+  margin-bottom: 2rem;
+}
+
+.button_cancel_order:hover,
+.button:focus-visible {
+  color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.footer {
+  font-size: 0.65rem;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .order {
+    max-width: 23rem;
+  }
+
+  .order__text-container {
+    margin: 2.5rem;
+    gap: 1.2rem;
+  }
+}

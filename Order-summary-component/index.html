@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Order summary card</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <article class="order">
+        <!-- Image -->
+        <div class="order__image-container">
+          <picture>
+            <img src="images/illustration-hero.svg" alt="Image of a girl listening to music" />
+          </picture>
+        </div>
+
+        <!-- Text-container -->
+        <div class="order__text-container">
+          <h1 class="order__title">Order Summary</h1>
+
+          <p class="order__subTitle">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+          <div class="order__plan-container">
+            <picture order__icon>
+              <img src="images/icon-music.svg" alt="music-icon" />
+            </picture>
+
+            <div class="plan__flex-container">
+              <p class="plan__type">Annual Plan</p>
+              <p class="plan__price">$59.99/year</p>
+            </div>
+
+            <p class="plan__change">Change</p>
+          </div>
+
+          <button class="button">Proceed to Payment</button>
+
+          <p class="button_cancel_order">Cancel Order</p>
+        </div>
+      </article>
+    </main>
+    <footer class="footer">Challenge by Frontend Mentor. Coded by Poorna Kamat</footer>
+  </body>
+</html>
