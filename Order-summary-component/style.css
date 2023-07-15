@@ -80,6 +80,9 @@ body {
   min-height: 100vh;
   place-content: center;
   margin: 1rem;
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
 }
 
 .order {
@@ -182,7 +185,12 @@ img {
   text-align: center;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
+  body {
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 20%;
+  }
   .order {
     max-width: 23rem;
   }
