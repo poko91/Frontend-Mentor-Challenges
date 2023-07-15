@@ -6,7 +6,7 @@ Solution for a challenge from [frontendmentor.io.](https://www.frontendmentor.io
 
 [Challenge link](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H/hub) | [My Solution](https://poko91.github.io/Frontend-Mentor-Challenges/QR-Code-component/)
 
-The challenge is to build out this product preview card component and get it looking as close to the design as possible. You can use any tools you like to help you complete the challenge.
+The challenge is to build out this QR code component and get it looking as close to the design as possible. You can use any tools you like to help you complete the challenge.
 \
 \
 ![desktop-design](https://github.com/poko91/Frontend-Mentor-Challenges/assets/82212882/03b2629f-a0ea-4341-82da-5a2192d962b9)

@@ -6,7 +6,7 @@ Solution for a challenge from [frontendmentor.io.](https://www.frontendmentor.io
 
 [Challenge link](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj) | [My Solution](https://poko91.github.io/Frontend-Mentor-Challenges/Order-summary-component/)
 
-The challenge is to build out this product preview card component and get it looking as close to the design as possible. You can use any tools you like to help you complete the challenge.
+The challenge is to build out this Order Summary component and get it looking as close to the design as possible. You can use any tools you like to help you complete the challenge.
 \
 \
 ![Screenshot 2023-07-15 at 12 10 05 AM](https://github.com/poko91/Frontend-Mentor-Challenges/assets/82212882/3d06f3c7-03ac-4741-9ad8-ce5cffbd8c71)
