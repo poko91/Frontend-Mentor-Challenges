@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <article class="card">
+        <picture class="card__image">
+          <source srcset="images/image-header-desktop.jpg" media="(min-width: 600px)" />
+          <img src="images/image-header-mobile.jpg" alt="Image of people working on a desk" />
+        </picture>
+        <header class="card__text">
+          <div class="card__heading">
+            <h1>Get <span>insights</span> that help your business grow.</h1>
+            <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+          </div>
+          <section class="wraper">
+            <div class="wraper__item">
+              <p class="wraper__title">10k+</p>
+              <p class="wraper__type">companies</p>
+            </div>
+            <div class="wraper__item">
+              <p class="wraper__title">314</p>
+              <p class="wraper__type">templates</p>
+            </div>
+            <div class="wraper__item">
+              <p class="wraper__title">12M+</p>
+              <p class="wraper__type">queries</p>
+            </div>
+          </section>
+        </header>
+      </article>
+    </main>
+    <footer class="footer">Challenge by Frontend Mentor. Coded by Poorna Kamat</footer>
+  </body>
+</html>
