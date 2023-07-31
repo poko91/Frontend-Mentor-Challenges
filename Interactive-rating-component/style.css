@@ -1,0 +1,210 @@
+/* Css Custom Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+:root {
+  /* Colors */
+
+  /* Primary */
+  --orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%, 0.7);
+  --very-dark-blue: hsl(216, 12%, 8%);
+
+  --medium-grey-transparent: hsl(216, 12%, 54%, 0.1);
+
+  /* Font Weight */
+  --fw-reg: 400;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 0.875rem;
+  background-color: var(--very-dark-blue);
+  color: var(--light-grey);
+  display: grid;
+  min-height: 100vh;
+  place-content: center;
+  margin: 1.5rem;
+}
+
+.rating-card,
+.thankyou-card {
+  background-color: var(--dark-blue);
+  max-width: 20.375rem;
+  text-align: center;
+  padding: 1.5rem;
+  display: grid;
+  gap: 1.5rem;
+  border-radius: 1rem;
+}
+
+.rating-card {
+  text-align: start;
+}
+
+.thankyou-card {
+  padding: 1.75rem;
+  gap: 1.25rem;
+}
+
+.star {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: none;
+  background-color: var(--medium-grey-transparent);
+  border-radius: 50%;
+}
+
+.title {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: var(--fw-bold);
+}
+
+.subtitle {
+  font-weight: var(--fw-reg);
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.125rem;
+}
+
+.button {
+  height: 2.5rem;
+  width: 2.5rem;
+  border: none;
+  background-color: var(--medium-grey-transparent);
+  border-radius: 50%;
+  color: var(--medium-grey);
+  text-align: center;
+}
+
+.button:hover {
+  color: var(--white);
+  background-color: var(--light-grey);
+  cursor: pointer;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.submit {
+  background-color: var(--orange);
+  border-radius: 50px;
+  border: none;
+  color: var(--white);
+  padding: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-weight: var(--fw-bold);
+  vertical-align: baseline;
+}
+
+.submit:hover {
+  color: var(--orange);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.thankyou-card__rating p {
+  background-color: var(--medium-grey-transparent);
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 0.75rem;
+  color: var(--orange);
+  padding: 0.25rem 0.65rem;
+  border-radius: 2rem;
+}
+
+.thankyou-card .subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.selected_button {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+  .rating-card,
+  .thankyou-card {
+    max-width: 25.5rem;
+    gap: 2.188rem;
+    padding: 2rem;
+  }
+
+  .thankyou-card {
+    gap: 1.25rem;
+    padding: 2.625rem 2rem;
+  }
+
+  .title {
+    font-size: 1.625rem;
+  }
+
+  .button {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+
+  .thankyou__image {
+    margin-bottom: 0.75rem;
+  }
+
+  .thankyou-card__rating p {
+    margin-bottom: 1.188rem;
+  }
+}
